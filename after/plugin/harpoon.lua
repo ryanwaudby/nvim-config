@@ -10,4 +10,4 @@ vim.keymap.set("n", "<C-n>", function() ui.nav_file(3) end)
 vim.keymap.set("n", "<C-s>", function() ui.nav_file(4) end)
 
 vim.keymap.set("n", "<C-q>", function() ui.nav_prev() end)
-vim.keymap.set("n", "<C-w>", function() ui.nav_next() end)
+vim.keymap.set("n", "<C-a>", function() ui.nav_next() end)
