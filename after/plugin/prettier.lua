@@ -22,6 +22,10 @@ prettier.setup({
         check_package_json = true,
       })
     end,
+    cli_options = {
+      -- https://prettier.io/docs/en/cli.html#--config-precedence
+      config_precedence = "prefer-file", -- or "cli-override" or "file-override"
+    },
     runtime_condition = function(params)
       -- return false to skip running prettier
       return true
